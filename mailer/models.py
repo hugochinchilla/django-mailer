@@ -61,8 +61,8 @@ class Message(models.Model):
     
     objects = MessageManager()
     
-    to_address = models.CharField(max_length=50)
-    from_address = models.CharField(max_length=50)
+    to_address = models.CharField(max_length=256)
+    from_address = models.CharField(max_length=256)
     subject = models.CharField(max_length=100)
     message_body = models.TextField()
     message_body_html = models.TextField(blank=True)
